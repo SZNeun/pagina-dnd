@@ -1,0 +1,89 @@
+body {
+    background-image: url(img/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica';
+    color: rgb(0, 0, 0);
+} 
+
+.floating-menu {
+    position: fixed;
+    top: 0; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e4b271;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 700px;
+    transition: top 0.3s;
+}
+
+.floating-menu.fixed {
+    top: 0;
+}
+
+.menu-title {
+    font-size: 18px;
+    font-weight: bold; 
+    color: #333; 
+    margin: 0; 
+    text-align: center; 
+}
+
+.floating-menu ul {
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.floating-menu li {
+    margin: 0; 
+}
+
+.floating-menu a {
+    text-decoration: none; 
+    color: #333; 
+    font-size: 16px; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; 
+}
+
+.floating-menu a:hover {
+    background-color: #e0c6a5; 
+    color: #000; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+.back-to-top {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    width: 50px; 
+    height: 50px; 
+    background-color: #e4b271;
+    color: #fff; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-decoration: none; 
+    font-size: 24px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); 
+    transition: background-color 0.3s, box-shadow 0.3s; 
+  }
+  
+  .back-to-top:hover {
+    background-color: #000000; 
+    box-shadow: 0 4px 8px #000000; 
+  }
